@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421A645C286C5BC70029D9FD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421A645B286C5BC70029D9FD /* Colors.xcassets */; };
+		421A645E286C6D380029D9FD /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A645D286C6D380029D9FD /* ColorUtils.swift */; };
 		42875C9A286A36440084887B /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42875C99286A36440084887B /* WeatherAppApp.swift */; };
 		42875C9C286A36440084887B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42875C9B286A36440084887B /* ContentView.swift */; };
 		42875C9E286A36460084887B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42875C9D286A36460084887B /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421A645B286C5BC70029D9FD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		421A645D286C6D380029D9FD /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		42875C96286A36440084887B /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42875C99286A36440084887B /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		42875C9B286A36440084887B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,7 +100,9 @@
 			children = (
 				42875C99286A36440084887B /* WeatherAppApp.swift */,
 				42875C9B286A36440084887B /* ContentView.swift */,
+				421A645D286C6D380029D9FD /* ColorUtils.swift */,
 				42875C9D286A36460084887B /* Assets.xcassets */,
+				421A645B286C5BC70029D9FD /* Colors.xcassets */,
 				42875C9F286A36460084887B /* Preview Content */,
 			);
 			path = WeatherApp;
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421A645C286C5BC70029D9FD /* Colors.xcassets in Resources */,
 				42875CA1286A36460084887B /* Preview Assets.xcassets in Resources */,
 				42875C9E286A36460084887B /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42875C9C286A36440084887B /* ContentView.swift in Sources */,
+				421A645E286C6D380029D9FD /* ColorUtils.swift in Sources */,
 				42875C9A286A36440084887B /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
