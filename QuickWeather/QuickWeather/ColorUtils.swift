@@ -1,6 +1,6 @@
 //
 //  ColorUtils.swift
-//  WeatherApp
+//  QuickWeather
 //
 //  Created by Maru on 29.06.2022.
 //

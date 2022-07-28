@@ -1,14 +1,14 @@
 //
-//  WeatherAppTests.swift
-//  WeatherAppTests
+//  QuickWeatherTests.swift
+//  QuickWeatherTests
 //
 //  Created by Maru on 27.06.2022.
 //
 
 import XCTest
-@testable import WeatherApp
+@testable import QuickWeather
 
-class WeatherAppTests: XCTestCase {
+class QuickWeatherTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

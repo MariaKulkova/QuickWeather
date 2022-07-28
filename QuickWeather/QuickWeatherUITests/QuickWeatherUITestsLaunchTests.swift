@@ -1,13 +1,13 @@
 //
-//  WeatherAppUITestsLaunchTests.swift
-//  WeatherAppUITests
+//  QuickWeatherUITestsLaunchTests.swift
+//  QuickWeatherUITests
 //
 //  Created by Maru on 27.06.2022.
 //
 
 import XCTest
 
-class WeatherAppUITestsLaunchTests: XCTestCase {
+class QuickWeatherUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
