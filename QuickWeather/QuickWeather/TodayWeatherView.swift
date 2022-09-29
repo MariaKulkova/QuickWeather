@@ -87,7 +87,7 @@ struct TodayWeatherView_Previews: PreviewProvider {
                 locationName: "Rostov-on-Don",
                 weekDay: "Monday",
                 dateString: "22 june",
-                condition: .fewClouds,
+                condition: .clouds,
                 temperature: "23°C",
                 windSpeed: "5 m/s",
                 humidity: "60 %",
