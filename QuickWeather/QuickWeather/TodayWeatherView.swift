@@ -31,6 +31,9 @@ struct TodayWeatherView: View {
                     Text("\(weather.weekDay), \(weather.dateString)")
                         .font(.system(size: 18))
                 }
+                .lineLimit(1)
+                .scaledToFill()
+                .minimumScaleFactor(0.5)
 
                 Spacer()
 

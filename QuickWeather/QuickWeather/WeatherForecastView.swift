@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WeatherForecastView: View {
 
-    var weatherForecast: [DayWeatherDescription]
+    @EnvironmentObject private var store: Store<WeatherState, WeatherAction, AppEnvironment>
 
     private let gridItems = [
         GridItem(.adaptive(minimum: 140), spacing: 16)
@@ -17,13 +17,16 @@ struct WeatherForecastView: View {
 
     var body: some View {
         VStack {
-            if let todayWeather = weatherForecast.first {
+            if let todayWeather = store.state.forecast.first {
                 TodayWeatherView(weather: todayWeather)
+                    .onTapGesture {
+                        store.send(.reload(location: Location(city: "Vladivostok")))
+                    }
             }
 
             ScrollView {
                 LazyVGrid(columns: gridItems, spacing: 16) {
-                    ForEach(weatherForecast.dropFirst(), id: \.self) { item in
+                    ForEach(store.state.forecast.dropFirst(), id: \.self) { item in
                         ShortDailyWeatherView(weather: item)
                             .padding(14)
                             .frame(maxHeight: 100)
@@ -38,18 +41,26 @@ struct WeatherForecastView: View {
         }
         .foregroundColor(.primaryText)
         .background(Color.primaryBackground)
+        .onAppear { store.send(.reload(location: Location(city: "Taganrog"))) }
     }
 }
 
 struct WeatherForecastView_Previews: PreviewProvider {
+    static let store = Store(
+        initialState: WeatherState(),
+        reducer: weatherReducer,
+        environment: AppEnvironment.mock
+    )
+
     static var previews: some View {
         Group {
-            WeatherForecastView(weatherForecast: stubForecast)
+            WeatherForecastView()
                 .previewInterfaceOrientation(.portrait)
 
-            WeatherForecastView(weatherForecast: stubForecast)
+            WeatherForecastView()
                 .previewInterfaceOrientation(.portrait)
                 .preferredColorScheme(.dark)
         }
+        .environmentObject(store)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42135F9928BCF97A008703E8 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42135F9828BCF97A008703E8 /* Reducer.swift */; };
+		42135F9B28BE36C7008703E8 /* MockEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42135F9A28BE36C7008703E8 /* MockEnvironment.swift */; };
 		421A645C286C5BC70029D9FD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421A645B286C5BC70029D9FD /* Colors.xcassets */; };
 		421A645E286C6D380029D9FD /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A645D286C6D380029D9FD /* ColorUtils.swift */; };
 		423921B028A519BE003C87F8 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423921AF28A519BE003C87F8 /* WeatherDataSource.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42135F9828BCF97A008703E8 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		42135F9A28BE36C7008703E8 /* MockEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEnvironment.swift; sourceTree = "<group>"; };
 		421A645B286C5BC70029D9FD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		421A645D286C6D380029D9FD /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		423921AF28A519BE003C87F8 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42135F9728BCF96B008703E8 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				42135F9828BCF97A008703E8 /* Reducer.swift */,
+				42135F9A28BE36C7008703E8 /* MockEnvironment.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
 		42875C8D286A36440084887B = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,7 @@
 				424CD5EB28AA8DC400F6F3F5 /* APIService.swift */,
 				424CD5EF28AA8EDE00F6F3F5 /* APIRequest.swift */,
 				424CD5ED28AA8DDA00F6F3F5 /* APIDataCoders.swift */,
+				42135F9728BCF96B008703E8 /* Redux */,
 			);
 			path = QuickWeather;
 			sourceTree = "<group>";
@@ -298,6 +312,7 @@
 				42875C9A286A36440084887B /* QuickWeatherApp.swift in Sources */,
 				4275C45B2892A3B7006159BD /* DayWeatherDescription.swift in Sources */,
 				424CD5EC28AA8DC400F6F3F5 /* APIService.swift in Sources */,
+				42135F9928BCF97A008703E8 /* Reducer.swift in Sources */,
 				4275C4572892A29D006159BD /* WeatherForecastView.swift in Sources */,
 				424CD5EE28AA8DDA00F6F3F5 /* APIDataCoders.swift in Sources */,
 				424CD5F428ABF0F300F6F3F5 /* WeatherFormatter.swift in Sources */,
@@ -307,6 +322,7 @@
 				4275C4592892A29D006159BD /* DayWeather.swift in Sources */,
 				424CD5F228ABB1DF00F6F3F5 /* DayWeatherDTO.swift in Sources */,
 				4275C4562892A29D006159BD /* TodayWeatherView.swift in Sources */,
+				42135F9B28BE36C7008703E8 /* MockEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
