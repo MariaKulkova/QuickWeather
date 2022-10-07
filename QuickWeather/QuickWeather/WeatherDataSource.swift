@@ -13,18 +13,18 @@ enum WeatherError: Error {
 }
 
 protocol WeatherDataSource {
-    func getWeatherForecast(location: Location, days: Int) async throws -> DayWeather
+    func getWeatherForecast(location: Location) async throws -> DayWeather
 }
 
 class RemoteWeatherDataSource: WeatherDataSource {
 
     var api: APIRequesting = APIService()
 
-    func getWeatherForecast(location: Location, days: Int) async throws -> DayWeather {
+    func getWeatherForecast(location: Location) async throws -> DayWeather {
         let request = AnyRequest<Void, DayWeatherDTO>(
             endpoint: "https://api.openweathermap.org/data/2.5/weather",
             method: .get,
-            queryParameters: ["q": "Taganrog", "appid": "d4a691ca4b983c713a17461d8751f661", "units": "metric"],
+            queryParameters: ["q": location.city, "appid": "d4a691ca4b983c713a17461d8751f661", "units": "metric"],
             parameters: nil,
             encoder: voidEncoder,
             decoder: jsonDecoder
